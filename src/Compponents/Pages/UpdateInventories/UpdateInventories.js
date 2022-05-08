@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const UpdateInventories = () => {
     const { id } = useParams()
-    const [updatebook, setUpdatebook] = useState({})
+    const [updatebook, setUpdatebook] = useState(true)
 
 
     useEffect(() => {
@@ -13,26 +13,25 @@ const UpdateInventories = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setUpdatebook(data))
-    }, [id]);
+    }, [updatebook]);
     const handleQuantity = () => {
 
-        // const quantity = updatebook.quantity
-        // const newQuantity = parseInt(quantity) - 1;
-        // const updateQuantity = { newQuantity }
-        // console.log(updateQuantity);
-        // const url = `http://localhost:5000/book/${id}`;
-        // fetch(url, {
-        //     method: 'PUT',
-        //     headers: {
-        //         'content-type': "application/json"
-        //     },
-        //     body: JSON.stringify(updateQuantity)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(parseInt(data?.updateQuantity));
-        //         setUpdatebook(parseInt(data?.updateQuantity))
-        //     })
+        const quantity = updatebook.quantity
+        const newQuantity = parseInt(quantity) - 1;
+        const updateQuantity = { newQuantity }
+        const url = `http://localhost:5000/book/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': "application/json"
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log("success", data);
+
+            })
 
 
 
@@ -59,7 +58,7 @@ const UpdateInventories = () => {
                     </Form>
                 </div>
             </div>
-            <Link to='/manageInventory'><button className='btn btn-primary w-lg-25 w-sm-50 mx-auto d-block mt-5'>Manage Inventory</button></Link>
+            <Link to='/manageInventory'><button className='btn btn-primary w-lg-50 w-sm-50 mx-auto d-block mt-5'>Manage Inventory</button></Link>
         </div>
     );
 };
