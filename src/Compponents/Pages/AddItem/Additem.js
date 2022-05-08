@@ -2,13 +2,11 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import auth from '../../../firebase.init';
-import useBooks from '../../Shered/hook/useHook';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Additem = () => {
     const { register, handleSubmit } = useForm();
-    const [setAllBooks] = useBooks()
     const [user] = useAuthState(auth)
 
     const onSubmit = data => {

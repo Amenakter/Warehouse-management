@@ -9,6 +9,7 @@ import MyItems from './Compponents/Pages/MyItems/MyItems';
 import Register from './Compponents/Pages/Register/Register';
 import RequiredAuth from './Compponents/Pages/RequiredAuth/RequiredAuth';
 import UpdateInventories from './Compponents/Pages/UpdateInventories/UpdateInventories';
+import Footer from './Compponents/Shered/Footer/Footer';
 import Header from './Compponents/Shered/Header/Header';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path='/catagories' element={<Catagoris></Catagoris>}></Route>
 
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

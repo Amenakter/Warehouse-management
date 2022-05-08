@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Children from './CatagoryItem/Children/Children';
 import Horror from './CatagoryItem/Horror/Horror';
 import Jokes from './CatagoryItem/Jokes/Jokes';

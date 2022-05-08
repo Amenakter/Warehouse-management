@@ -2,6 +2,7 @@ import { Carousel } from 'react-bootstrap';
 import React, { useState } from 'react';
 import banner1 from '../../../images/banner1.jpg'
 import banner2 from '../../../images/banner2.jpg'
+import banner3 from '../../../images/banner3.jpg'
 import './Banner.css'
 
 const Banner = () => {
@@ -16,7 +17,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={banner1}
+                        src={banner3}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -27,7 +28,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={banner2}
+                        src={banner1}
                         alt="Second slide"
                     />
 
