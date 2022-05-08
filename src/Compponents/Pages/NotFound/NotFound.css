@@ -1,0 +1,10 @@
+.notfound-img {
+    background-image: url('../../images/error.jpg');
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+
+
+}

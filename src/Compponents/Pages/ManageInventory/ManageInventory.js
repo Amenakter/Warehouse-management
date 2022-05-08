@@ -45,7 +45,7 @@ const ManageInventory = () => {
                 <div className="row">
                     {
                         allBooks.map(book => <div key={book._id} className='d-flex col-lg-4 col-sm-12  gy-4' >
-                            <Card style={{ width: '18rem' }}>
+                            <Card style={{ width: '18rem', backgroundColor: "rgb(234, 234, 253)" }}>
                                 <Card.Img variant="top" height='200px' style={{ marginTop: "20px" }} src={book.img} />
                                 <Card.Body>
                                     <Card.Title>{book.name}</Card.Title>
