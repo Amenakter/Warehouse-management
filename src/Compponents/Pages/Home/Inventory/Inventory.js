@@ -13,9 +13,9 @@ const Inventory = ({ book }) => {
     }
 
     return (
-        <div className='d-flex col-4  gy-4' >
+        <div className='d-flex col-lg-4 col-12 align-items-sm-center  gy-4' >
             <Card style={{ width: '25rem' }}>
-                <Card.Img variant="top" height='200px' style={{ marginTop: "20px" }} src={img} />
+                <Card.Img variant="top" className='w-100' height='200px' style={{ marginTop: "20px" }} src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
