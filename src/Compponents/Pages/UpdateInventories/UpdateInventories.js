@@ -8,14 +8,14 @@ const UpdateInventories = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/book/${id}`
+        const url = `https://secret-bastion-00294.herokuapp.com/book/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setUpdatebook(data))
     }, [updatebook]);
 
     const handleQuantity = (newQuantityValue) => {
-        const url = `http://localhost:5000/book/${id}`;
+        const url = `https://secret-bastion-00294.herokuapp.com/book/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

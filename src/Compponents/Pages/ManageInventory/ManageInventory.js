@@ -14,7 +14,7 @@ const ManageInventory = () => {
 
         const userConfirmation = window.confirm("Are you sure? Do you want delete this book?")
         if (userConfirmation) {
-            const url = `http://localhost:5000/book/${id}`
+            const url = `https://secret-bastion-00294.herokuapp.com/book/${id}`
             fetch(url, {
                 method: "DELETE",
 

@@ -6,12 +6,17 @@ const MyItems = () => {
     const [addItems, setAddItems] = useState([])
     const [user] = useAuthState(auth)
     useEffect(() => {
-        const url = `http://localhost:5000/addedItems`
+        const url = `https://secret-bastion-00294.herokuapp.com/addedItems`
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                setAddItems(data)
+
+                if (data.Email) {
+                    const myitems = addItems.filter(myitem => myitem.Email === user.email)
+                    setAddItems(myitems)
+                };
+
+
             })
     }, [user])
 
