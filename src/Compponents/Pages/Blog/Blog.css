@@ -1,0 +1,17 @@
+.div {
+    background-color: rgb(232, 239, 246);
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.div h3 {
+    color: rgb(161, 3, 3);
+}
+
+.div p {
+    color: rgb(4, 67, 4);
+}
