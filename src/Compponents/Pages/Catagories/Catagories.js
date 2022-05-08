@@ -9,18 +9,14 @@ const Catagoris = () => {
         <div className='mt-5'>
             <nav className="navbar navbar-expand-md navbar-light bg-light mt-5">
                 <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="toggleMobileMenu">
-                        <div className="navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="catagories#children" className='fs-6 text-dark fw-bold'>Children</Nav.Link>
-                                <Nav.Link href="catagories#jokes" className='fs-6 text-dark fw-bold'>Jokes</Nav.Link>
-                                <Nav.Link href="catagories#horror" className='fs-6 text-dark fw-bold'>Horror</Nav.Link>
+                    <div className="navbar-nav  ">
+                        <Nav className="me-auto">
+                            <Nav.Link href="catagories#children" className='fs-6 text-dark fw-bold'>Children</Nav.Link>
+                            <Nav.Link href="catagories#jokes" className='fs-6 text-dark fw-bold'>Jokes</Nav.Link>
+                            <Nav.Link href="catagories#horror" className='fs-6 text-dark fw-bold'>Horror</Nav.Link>
 
-                            </Nav>
-                        </div>
+                        </Nav>
+
                     </div>
                 </div>
             </nav >
