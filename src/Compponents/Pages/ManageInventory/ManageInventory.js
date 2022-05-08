@@ -37,14 +37,14 @@ const ManageInventory = () => {
         <div >
             <h3 className='text-center mt-4'>Our All Collections</h3>
             <div style={{ height: '2px' }} className='w-50 bg-secondary d-block mx-auto mb-4'></div>
-            <div className=' position-sticky top-50 float-end  mt-5'>
+            <div className='w-25 position-sticky  top-50 float-end mt-5'>
                 <h5 className='text-dark'>If you want,you can add new items:</h5>
-                <Link to='/additem'><button className='btn btn-primary '>Add new Item</button></Link>
+                <Link to='/additem'><button className='btn btn-primary'>Add new Item</button></Link>
             </div>
             <div className='manageBook'>
                 <div className="row">
                     {
-                        allBooks.map(book => <div key={book._id} className='d-flex col-4  gy-4' >
+                        allBooks.map(book => <div key={book._id} className='d-flex col-lg-4 col-sm-12  gy-4' >
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" height='200px' style={{ marginTop: "20px" }} src={book.img} />
                                 <Card.Body>

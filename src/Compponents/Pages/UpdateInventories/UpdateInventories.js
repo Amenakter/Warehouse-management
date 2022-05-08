@@ -41,7 +41,7 @@ const UpdateInventories = () => {
     return (
         <div>
             <div className='d-flex justify-content-evenly mt-3' >
-                <div className='container w-50 align-items-center text-center p-2' style={{ backgroundColor: "rgb(215, 219, 244)" }}>
+                <div className='container col-lg-6  w-lg-50 w-sm-100 align-items-center text-center p-4' style={{ backgroundColor: "rgb(215, 219, 244)" }}>
                     <h4>book Name :{updatebook.name}</h4>
                     <img src={updatebook.img} height='270px' alt="" />
 
@@ -50,9 +50,6 @@ const UpdateInventories = () => {
                     <p>{updatebook.descriptio}</p>
 
                     <button className='btn btn-primary mb-3' onClick={handleQuantity}>Deliverd</button>
-                </div>
-
-                <div className='container w-25  text-center' style={{ backgroundColor: "rgb(172, 175, 237)" }} >
                     <Form>
                         <Form.Group className="mb-2 mt-5 fs-4" controlId="formBasicNumber">
                             <Form.Label>Add Quantity:</Form.Label>
@@ -60,10 +57,9 @@ const UpdateInventories = () => {
                             <Button className='mt-5' >add quantity</Button>
                         </Form.Group>
                     </Form>
-
                 </div>
             </div>
-            <Link to='/manageInventory'><button className='btn btn-primary w-25 mx-auto d-block mt-2'>Manage Inventory</button></Link>
+            <Link to='/manageInventory'><button className='btn btn-primary w-lg-25 w-sm-50 mx-auto d-block mt-5'>Manage Inventory</button></Link>
         </div>
     );
 };

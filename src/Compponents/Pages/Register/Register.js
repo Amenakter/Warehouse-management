@@ -52,7 +52,7 @@ const Register = () => {
     }
 
     return (
-        <div className='w-50 mx-auto mt-2 px-4 py-2 rounded' style={{ backgroundColor: "rgb(172, 175, 237)" }}>
+        <div className='col-lg-6 w-lg-50 w-sm-100 mx-auto mt-2 px-4 py-2 rounded' style={{ backgroundColor: "rgb(172, 175, 237)" }}>
             <Form onSubmit={handleSubmit} className='fw-bold' >
                 <img className='d-block mx-auto' src={userlogo} alt="" />
                 <div className='d-flex align-items-center justify-content-center'>

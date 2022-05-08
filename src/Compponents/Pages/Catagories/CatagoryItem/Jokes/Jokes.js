@@ -16,9 +16,9 @@ const Jokes = () => {
 
             <div className='row'>
                 {
-                    childBook.map(book => <div key={book._id} className='d-flex col-4  gy-4' >
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" height='200px' style={{ marginTop: "20px" }} src={book.img} />
+                    childBook.map(book => <div key={book._id} className='d-flex col-lg-3 col-sm-12 w-lg-50 w-sm-100   gy-4' >
+                        <Card >
+                            <Card.Img variant="top" height='400px' style={{ marginTop: "20px" }} src={book.img} />
                             <Card.Body>
                                 <Card.Title>{book.name}</Card.Title>
                                 <Card.Text>

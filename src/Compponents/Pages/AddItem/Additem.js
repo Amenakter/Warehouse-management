@@ -44,7 +44,7 @@ const Additem = () => {
 
     return (
         <div>
-            <div className='mt-5 border p-5  d-block mx-auto w-50' style={{ backgroundColor: "rgb(172, 175, 237)" }}>
+            <div className='col-lg-6 w-lg-50 w-sm-100 mt-5 border p-5  d-block mx-auto ' style={{ backgroundColor: "rgb(172, 175, 237)" }}>
                 <form className='text-center fs-5' onSubmit={handleSubmit(onSubmit)} >
                     <label> Book Name :</label>
                     <input className='mb-4 ms-3 rounded border-0 p-1' type='text'  {...register("name", { required: true })} /> <br />

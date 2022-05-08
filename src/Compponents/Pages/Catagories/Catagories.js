@@ -24,9 +24,13 @@ const Catagoris = () => {
                     </div>
                 </div>
             </nav >
-            <Children></Children>
-            <Horror></Horror>
-            <Jokes></Jokes>
+            <div className=''>
+                <div >
+                    <Children></Children>
+                    <Horror></Horror>
+                    <Jokes></Jokes>
+                </div>
+            </div>
         </div >
     );
 };
